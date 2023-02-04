@@ -1,6 +1,6 @@
 package com.haiprj.base.mvp.model;
 
-public class DataModel {
+public abstract class DataModel {
 
     protected DataResult dataResult;
 

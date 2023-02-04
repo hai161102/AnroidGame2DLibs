@@ -11,7 +11,6 @@ public class DataPresenter implements DataResult {
     protected DataModel dataModel;
     public DataPresenter(ViewResult viewResult) {
         this.viewResult = viewResult;
-        dataModel = new DataModel(this);
     }
 
     @Override
