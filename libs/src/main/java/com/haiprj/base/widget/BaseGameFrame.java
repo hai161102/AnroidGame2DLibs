@@ -61,27 +61,27 @@ public abstract class BaseGameFrame extends FrameLayout implements View.OnTouchL
     public boolean onTouch(View view, MotionEvent motionEvent) {
         switch (motionEvent.getAction()){
             case MotionEvent.ACTION_DOWN:
-                onTouchDown(view);
+                onTouchDown(view, motionEvent);
                 break;
             case MotionEvent.ACTION_MOVE:
-                onTouchMove(view);
+                onTouchMove(view, motionEvent);
                 break;
             case MotionEvent.ACTION_UP:
-                onTouchUp(view);
+                onTouchUp(view, motionEvent);
                 break;
         }
         return true;
     }
 
-    protected void onTouchUp(View view) {
+    protected void onTouchUp(View view, MotionEvent motionEvent) {
 
     }
 
-    protected void onTouchMove(View view) {
+    protected void onTouchMove(View view, MotionEvent motionEvent) {
 
     }
 
-    protected void onTouchDown(View view) {
+    protected void onTouchDown(View view, MotionEvent motionEvent) {
     }
 
     public void destroy(){
