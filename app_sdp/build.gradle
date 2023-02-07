@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.haiprj.anroidgame2d'
+    namespace 'com.haiprj.app_sdp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.haiprj.anroidgame2d"
+        applicationId "com.haiprj.app_sdp"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -26,19 +26,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildFeatures {
-        viewBinding true
-        dataBinding true
-    }
 }
 
 dependencies {
 
-    implementation project (':libs')
-    implementation project (':app_sdp')
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    implementation 'com.intuit.sdp:sdp-android:1.1.0'
 }

@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = "AnroidGame2D"
 include ':app'
 include ':libs'
+include ':app_sdp'
